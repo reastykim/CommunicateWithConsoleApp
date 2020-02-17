@@ -21,15 +21,15 @@ namespace ConsoleApp1
                 {
                     case 0:
                         Thread.Sleep(1000);
-                        Console.Write("나이를 입력하세요 : ");
+                        Console.WriteLine("나이를 입력하세요 : ");
                         consoleInputString = Console.ReadLine();
                         Console.WriteLine($"당신의 나이는 {consoleInputString}");
                         break;
                     case 1:
                         Thread.Sleep(2500);
-                        Console.Write("이름을 입력하세요 : ");
+                        Console.WriteLine("이름을 입력하세요 : ");
                         consoleInputString = Console.ReadLine();
-                        Console.WriteLine($"{consoleInputString}");
+                        Console.WriteLine($"당신의 이름은 {consoleInputString}");
                         break;
                     default:
                         throw new Exception();

@@ -13,7 +13,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" IsEnabled="False">
+        <Grid x:Name="gridAgeInput" Grid.Row="0" IsEnabled="False">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition />
@@ -25,12 +25,10 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Column="0" Content="나이를 입력하세요."/>
-            <TextBox Grid.Column="1"/>
-            <Button Grid.Column="2" Content="Send"/>
-
-            <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text=" [output from ConsoleApp] "/>
+            <TextBox Grid.Column="1" x:Name="txtBoxAge"/>
+            <Button Grid.Column="2" Content="Send" Click="Button_Click"/>
         </Grid>
-        <Grid Grid.Row="1" IsEnabled="False">
+        <Grid x:Name="gridNameInput" Grid.Row="1" IsEnabled="False">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition />
@@ -42,10 +40,10 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Column="0" Content="이름을 입력하세요."/>
-            <TextBox Grid.Column="1"/>
-            <Button Grid.Column="2" Content="Send"/>
+            <TextBox Grid.Column="1" x:Name="txtBoxName"/>
+            <Button Grid.Column="2" Content="Send" Click="Button_Click_1" />
 
-            <TextBlock Grid.Row="1" Grid.ColumnSpan="3" Text=" [output from ConsoleApp] "/>
+            <TextBlock x:Name="txtBlockOutput" Grid.Row="1" Grid.ColumnSpan="3" Text=" [output from ConsoleApp] "/>
         </Grid>
 
         
